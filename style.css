@@ -219,7 +219,6 @@ a {
 }
 .album{
     width: 30%;
-    background-color: rgb(207, 50, 189);
 }
 
 .player{
@@ -228,7 +227,6 @@ a {
 
 .controls{
     width: 30%;
-    background-color: rgb(224, 88, 75);
 }
 .player-controls{
     display: flex;
@@ -249,10 +247,11 @@ a {
     align-items: center;
 }
 .progress-bar{
-    width: 70%;
+    width: 60%;
     appearance: none;
     background-color: transparent;
     cursor: pointer;
+    margin-right: 2.5rem;
 }
 .progress-bar::-webkit-slider-runnable-track{
     background-color: #ddd;
@@ -266,4 +265,55 @@ a {
     background-color: #1bd760;
     border-radius: 50%;
     margin-top: -2.5px;
+}
+.controls-buttons-2{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+margin-right: 1rem;
+
+}
+.controls-buttons-2 i{
+    margin: 0.3rem;
+    opacity: 0.6;
+}
+.controls-buttons-2 i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.song-playing{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+
+}
+.song-img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.song_img{
+    width: fit-content;
+    height: 4rem;
+    width: 4rem;
+}
+.song-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 2rem 0.5rem 1rem;
+}
+.song-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.singer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.album-icons i{
+    margin-left: 0.3rem;
 }
