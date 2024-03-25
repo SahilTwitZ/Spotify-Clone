@@ -14,7 +14,6 @@ body {
 }
 
 .sidebar {
-    background-color: red;
     width: 340px;
     background-color: black;
     margin-right: 0.5rem;
@@ -29,7 +28,8 @@ body {
 }
 
 .music-player {
-    background-color: #121212;
+    display: flex;
+    background-color: black;
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -210,4 +210,60 @@ a {
     height: 40%;
     border-top: 1px solid white;
     opacity: 0.5;
+}
+
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width: 30%;
+    background-color: rgb(207, 50, 189);
+}
+
+.player{
+    width: 40%;
+}
+
+.controls{
+    width: 30%;
+    background-color: rgb(224, 88, 75);
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-controls-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+.player-controls-icon:hover{
+    opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.25rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 10px;
+    width: 10px;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -2.5px;
 }
